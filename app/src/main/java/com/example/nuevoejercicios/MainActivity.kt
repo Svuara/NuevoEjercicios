@@ -54,8 +54,50 @@ fun main(parametro: Array<String>)    {
     val resultado4 =  (numero1 + numero2 + numero3 + numero4) / 4
     println("el promedio de todos los numeros es  $resultado4")
 
+    //IF - CONDICIONAL SIMPLE
+    print("Ingrese el sueldo del empleado: ")
+    val sueldo = readLine()!!.toDouble()
+    if (sueldo > 3000)
+        println("Debe pagar impuesto ")
 
+    // IF CONDICIONAL COMPUESTO ELSE
 
+    if ( valor1 > valor2)
+    println("El mayor valor es $valor1" )
+    else
+    println("El mayor valor es $valor2")
 
+    if (valor1 < valor2){
+        val suma = (valor1 + valor2)
+        val resta = (valor1 - valor2)
+        println("La suma es $suma")
+        println("La resta es $resta")
+    } else {
+        val producto = (valor1 * valor2)
+        val division = (valor1 / valor2)
+        println("El producto es $producto")
+        println("La division es $division")
+
+        print("Ingrese nota de Matematicas")
+        var matematicas = readLine()!!.toInt()
+        print("Ingrese nota de Matematicas")
+        var historia = readLine()!!.toInt()
+        print("Ingrese nota de Matematicas")
+        var lengua = readLine()!!.toInt()
+        val promedio = (matematicas + historia + lengua) / 3
+        if ( promedio >=  7){
+            println("Promocionando")
+        } else {
+            println("no promocionaste")
+        }
+        print("Ingrese su numero ")
+        var digito = readLine()!!.toInt()
+        if ( digito > 9) {
+            //if (digito < 10)
+            println("Su numero tiene 2 digitos")
+
+    }  else {
+            println("Su numero tiene 1 solo digito")
+        }
 }
-
+}
