@@ -78,18 +78,22 @@ fun main(parametro: Array<String>)    {
         println("El producto es $producto")
         println("La division es $division")
 
-        print("Ingrese nota de Matematicas")
+        print("Ingrese nota de Matematicas ")
         var matematicas = readLine()!!.toInt()
-        print("Ingrese nota de Matematicas")
+        print("Ingrese nota de Historia ")
         var historia = readLine()!!.toInt()
-        print("Ingrese nota de Matematicas")
+        print("Ingrese nota de Lengua ")
         var lengua = readLine()!!.toInt()
         val promedio = (matematicas + historia + lengua) / 3
         if ( promedio >=  7){
             println("Promocionando")
-        } else {
+        }else if (promedio >=4)
+            println("Regular")
+        else {
             println("no promocionaste")
         }
+        //val estado = if(promedio >=7)"Promocionado" else if (promedio >=4)"Regular" else (promedio >=4)"No promociona"
+
         print("Ingrese su numero ")
         var digito = readLine()!!.toInt()
         if ( digito > 9) {
@@ -100,4 +104,34 @@ fun main(parametro: Array<String>)    {
             println("Su numero tiene 1 solo digito")
         }
 }
+    print("Ingrese un valor entero:")
+    val valor = readLine()!!.toInt()
+    if (valor == 0)
+        println("Se ingresó el cero")
+    else
+        if (valor > 0)
+            println("Se ingresó un valor positivo")
+        else
+            println("Se ingresó un valor negativo")
+
+    // Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+    
+
+    print("Ingrese primer valor:")
+    val digito1 = readLine()!!.toInt()
+    print("Ingrese segundo valor:")
+    val digito2 = readLine()!!.toInt()
+    print("Ingrese tercer valor:")
+    val digito3 = readLine()!!.toInt()
+    if (digito1 > digito2)
+        if (digito1 > digito3)
+            print(digito1)
+        else
+            print(digito3)
+    else
+        if (digito2 > digito3)
+            print(digito2)
+        else
+            print(digito3)
+
 }
