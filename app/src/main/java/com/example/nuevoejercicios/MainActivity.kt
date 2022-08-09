@@ -114,8 +114,32 @@ fun main(parametro: Array<String>)    {
         else
             println("Se ingresó un valor negativo")
 
+//Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad.
+
+    print("Ingrese Dia ")
+    val dia = readLine()!!.toInt()
+    print("Ingrese Mes ")
+    val mes = readLine()!!.toInt()
+    print("Ingrese Año ")
+    val año = readLine()!!.toInt()
+    val fecha = ("$dia - $mes - $año")
+    if (dia == 31 || mes == 12 )
+        println("$fecha es navidad")
+    else(println("no es navidad"))
+
+// Se ingresan tres valores por teclado, si todos son iguales calcular el cubo del número y mostrarlo.
+
+    var = cubo (numero1 * numero2 * numero3)
+        if (numero1 == numero2  || == numero3) * 3
+    println("El cubo es  ")
+    else("No son iguales no se calcula el cubo ")
+
+
+
+
+
     // Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
-    
+
 
     print("Ingrese primer valor:")
     val digito1 = readLine()!!.toInt()
