@@ -25,6 +25,7 @@ fun main(parametro: Array<String>)    {
         19 -> tablas()
         20 -> triangulosFormas()
         21 -> cantidadDeHijos()
+        22 -> arreglosEnteros()
 
     }
 }
@@ -50,6 +51,8 @@ fun menu(){
     println("Ingrese 19 para tablas")
     println("Ingrese 20 triangulos formas")
     println("Ingrese 21 cantidad de hijos")
+    println("Ingrese 22 Arreglo entero")
+
 
 
 }
@@ -407,5 +410,35 @@ fun cantidadDeHijos(){
     println("Familias con 2 o mas hijos $cantidadDeHijos2")
 
 }
+
+
+fun arreglosEnteros(){
+    var sumaArreglo = 0
+    var mayorA30 = 0
+    var menorA30 = 0
+    var arregloEnteros = IntArray(8)
+    for (i in 0..(arregloEnteros.size-1)){
+        print("Ingrese elemento:")
+        arregloEnteros[i] = readln().toInt()
+    }
+    for (i in arregloEnteros){
+        sumaArreglo = sumaArreglo + i
+        if (i > 30){
+            mayorA30 = mayorA30 + 1
+        } else {
+            menorA30 = menorA30 + 1
+        }
+
+    }
+
+    println("La suma total de los valores ingresados es: $sumaArreglo")
+    println("La cantidad de valores mayor a 30 son: $mayorA30")
+    println("La cantidad de valores menor a 30 son: $menorA30")
+
+
+}
+
+
+
 
 
